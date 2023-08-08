@@ -4,19 +4,37 @@ using UnityEngine.UI;
 public class PlayerMouve : MonoBehaviour
 {
     public float movementSpeed = 5f; // Скорость перемещения объекта по оси X
-
+    public animPlayer animPlayer;
     private bool isMovingLeft = false;
     private bool isMovingRight = false;
+    //public GameObject playerplain; // Ссылка на объект, который выполняет анимацию
+    //private Animator anim;
+
+    private void Start()
+    {
+        
+    }
 
     void Update()
     {
         if (isMovingLeft || Input.GetKey(KeyCode.A))
         {
+            animPlayer.animstopMovingRight();
+            animPlayer.animisMovingLeft();
             MoveObject(-1f);
         }
         else if (isMovingRight || Input.GetKey(KeyCode.D))
         {
+            animPlayer.animstopMovingLeft();
+            animPlayer.animisMovingRight();
             MoveObject(1f);
+        }
+        else
+        {
+            animPlayer.animstopMoving();
+            //if (animPlayer.isStop) {
+            //animPlayer.animstopMoving();
+            //}
         }
     }
 

@@ -196,6 +196,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8818680601931665431, guid: e776ea755f4ab480dab31537b7f19593, type: 3}
   m_PrefabInstance: {fileID: 8652104999313481368}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &221631347 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 221631347, guid: e776ea755f4ab480dab31537b7f19593, type: 3}
+  m_PrefabInstance: {fileID: 8652104999313481368}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 270399e1808254c8dbd5afcbd99070d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &856766874
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 0.3
+  animPlayer: {fileID: 221631347}
 --- !u!4 &856766876
 Transform:
   m_ObjectHideFlags: 0
@@ -395,6 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
+  animPlayer: {fileID: 0}
 --- !u!114 &1303488274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -959,38 +972,6 @@ PrefabInstance:
     - target: {fileID: 373749522637254047, guid: e776ea755f4ab480dab31537b7f19593, type: 3}
       propertyPath: m_Name
       value: PlayerPlayen
-      objectReference: {fileID: 0}
-    - target: {fileID: 1177235064156788083, guid: e776ea755f4ab480dab31537b7f19593, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1575329925346497392, guid: e776ea755f4ab480dab31537b7f19593, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1575329925346497392, guid: e776ea755f4ab480dab31537b7f19593, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1575329925346497392, guid: e776ea755f4ab480dab31537b7f19593, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2519804518756412088, guid: e776ea755f4ab480dab31537b7f19593, type: 3}
-      propertyPath: startTimeBtwShots
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6597246041038594609, guid: e776ea755f4ab480dab31537b7f19593, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6597246041038594609, guid: e776ea755f4ab480dab31537b7f19593, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6597246041038594609, guid: e776ea755f4ab480dab31537b7f19593, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8818680601931665431, guid: e776ea755f4ab480dab31537b7f19593, type: 3}
       propertyPath: m_RootOrder
